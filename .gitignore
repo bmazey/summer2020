@@ -129,4 +129,5 @@ dmypy.json
 .pyre/
 
 # PyCharm IDE files
-.idea
+Project.xml
+vcs.xml
