@@ -1,3 +1,4 @@
+# TODO check to make sure no two passwords are the same
 # at least 12 characters long
 # contain at least 4 lowercase letters
 # contain at least 4 digits
