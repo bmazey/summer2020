@@ -39,6 +39,12 @@ def test_password_special():
     assert contains_any(password[10], '!@#$%^&*')
 
 
+def test_password_no_duplicates():
+    password_1 = generate_password()
+    password_2 = generate_password()
+    assert password_2 != password_1
+
+
 def contains_any(str, set):
     """ Check whether sequence str contains ANY of the items in set. """
     return 1 in [c in str for c in set]
