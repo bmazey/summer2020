@@ -22,9 +22,8 @@ def test_animal_breathe():
 def test_animal_eat():
     lemur = Animal('lemur')
     eat = lemur.eat()
-    assert eat == 'lemur is eating'
+    assert eat == 'lemur is eating!'
 
     orca = Animal('orca')
     eat = orca.eat()
-    assert eat == 'orca is eating'
-
+    assert eat == 'orca is eating!'
