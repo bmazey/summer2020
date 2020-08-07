@@ -9,15 +9,12 @@ class Hieroglyph(object):
 
     @staticmethod
     def worship_sacred_cats(s):
-        # FIXME!
-        return True
+        return re.match(r'.*cat.*', s)
 
     @staticmethod
     def alphanumeric_glyph(s):
-        # FIXME!
-        return True
+        return re.match(r'[a-z]{3}d\d+', s)
 
     @staticmethod
     def steal_crystal_skull(s):
-        # FIXME!
-        return s
+        return s.replace('skull', 'idol')
