@@ -8,7 +8,7 @@ class GroceryList:
 
     def first(self):
         # FIXME!
-        return ''
+        return self.items[0]
 
     def last(self):
         # FIXME!
@@ -20,5 +20,10 @@ class GroceryList:
 
     def populate_list(self):
         # FIXME!
+        self.items.append("milk")
+        self.items.append("eggs")
+        self.items.append("seltzer")
+        self.items.append("honey")
+        self.items.append("seltzer")
         return
 
