@@ -43,3 +43,4 @@ def test_nile_crocodile():
     assert not Hieroglyph.nile_crocodile('crocodile')
     assert not Hieroglyph.nile_crocodile('nile')
     assert Hieroglyph.nile_crocodile('beware the nile crocodile')
+    assert Hieroglyph.nile_crocodile('on the nile swims the crocodile')
