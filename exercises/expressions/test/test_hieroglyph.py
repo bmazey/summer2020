@@ -25,3 +25,21 @@ def test_steal_crystal_skull():
     assert Hieroglyph.steal_crystal_skull('skull crystal skull') == 'idol crystal idol'
     assert Hieroglyph.steal_crystal_skull('crystal boulder') == 'crystal boulder'
     assert Hieroglyph.steal_crystal_skull('skull skull boulder skull') == 'idol idol boulder idol'
+
+
+def test_symbolic_glyph():
+    assert Hieroglyph.symbolic_glyph('%@')
+    assert not Hieroglyph.symbolic_glyph('@')
+    assert not Hieroglyph.symbolic_glyph('@%')
+    assert Hieroglyph.symbolic_glyph('%%%@@@')
+    assert Hieroglyph.symbolic_glyph('%%%#@@@')
+    assert Hieroglyph.symbolic_glyph('%%%###@@@')
+    assert not Hieroglyph.symbolic_glyph('#')
+    assert not Hieroglyph.symbolic_glyph('#%')
+
+
+def test_nile_crocodile():
+    assert Hieroglyph.nile_crocodile('nile crocodile')
+    assert not Hieroglyph.nile_crocodile('crocodile')
+    assert not Hieroglyph.nile_crocodile('nile')
+    assert Hieroglyph.nile_crocodile('beware the nile crocodile')

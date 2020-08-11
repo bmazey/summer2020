@@ -18,3 +18,13 @@ class Hieroglyph(object):
     @staticmethod
     def steal_crystal_skull(s):
         return s.replace('skull', 'idol')
+
+    @staticmethod
+    def symbolic_glyph(s):
+        # FIXME!
+        return True
+
+    @staticmethod
+    def nile_crocodile(s):
+        # FIXME!
+        return True
