@@ -12,7 +12,7 @@ def detect_plagiarism(source, submission):
 
     # TODO - explain me
     for i in range(m - 1):
-        h = (h * d) % q
+        h = ((d * m) - 1) % q
 
     # calculating the hash for the first window of text
     for i in range(m):
@@ -29,8 +29,10 @@ def detect_plagiarism(source, submission):
         if i < m - n:
             t = (d * (t - ord(source[i]) * h) + ord(source[i + m])) % q
 
-            # We might get negative values of t, converting it to positive
+            # We might get negative values of t, converting it to
+            # positive
             if t < 0:
                 t += q
 
     return False
+there are 3 arguments
