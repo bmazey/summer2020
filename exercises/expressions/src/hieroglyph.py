@@ -22,9 +22,9 @@ class Hieroglyph(object):
     @staticmethod
     def symbolic_glyph(s):
         # FIXME!
-        return True
+        return re.match(r'%+#*@*', s)
 
     @staticmethod
     def nile_crocodile(s):
         # FIXME!
-        return True
+        return re.match(r'.*nile .*crocodile', s)
