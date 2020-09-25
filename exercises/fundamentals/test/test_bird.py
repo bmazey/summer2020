@@ -20,6 +20,9 @@ def test_bird_lay_eggs():
     penguin = Bird('penguin', False, 2)
     assert penguin.lay_eggs() == 'penguin has laid 2 eggs!'
 
+    for i in range(100):
+        penguin = Bird('penguin', False, 2)
+
 
 def test_bird_eat_and_breathe():
     condor = Bird('condor', True, 1)
